@@ -1,4 +1,4 @@
-// sleepのアロー関数化
+// 繰り返し処理でのasync/await
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 // アクセスするURL
