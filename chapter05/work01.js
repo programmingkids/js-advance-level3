@@ -10,7 +10,8 @@ async function getValue() {
 const promise = getValue();
 
 // thenで処理をつなぐ
-promise.then(data => {
+promise
+.then(data => {
     // getValueの戻り値は引数dataとして受け取る
     console.log( '3:成功した' );
     console.log( data );
