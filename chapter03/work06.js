@@ -4,16 +4,20 @@ console.log( '1:処理の開始' );
 // Promiseオブジェクトの作成
 const promise = new Promise((resolve, reject) => {
     resolve( '3:こんにちは' );
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return '4:こんにちは';
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return '5:こんにちは';
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return '6:こんにちは';
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
 });
 

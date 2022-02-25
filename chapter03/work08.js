@@ -15,22 +15,26 @@ const sleep = ( seconds, callback ) => {
 // 関数sleepを連続して呼び出す
 sleep(1000, () => {
     return '3:こんにちは';
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return sleep(1000, () => {
         return '4:こんにちは';
     });
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return sleep(1000, () => {
         return '5:こんにちは';
     });
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
     return sleep(1000, () => {
         return '6:こんにちは';
     });
-}).then((data) => {
+})
+.then((data) => {
     console.log( data );
 });
 

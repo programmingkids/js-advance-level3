@@ -7,10 +7,12 @@ const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         reject( '5:さようなら' );
     }, 1000);
-}).then((data) => {
+})
+.then((data) => {
     console.log( '3:成功した' );
     console.log( data );
-}).catch((data) => {
+})
+.catch((data) => {
     console.log( '4:失敗した' );
     console.log( data );
 });
