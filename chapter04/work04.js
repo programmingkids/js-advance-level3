@@ -2,7 +2,7 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 // アクセスするURL
-const url = 'https://www.yahoo.co.jp/';
+const url = 'https://cog-study.herokuapp.com/js_advance_level3/chapter04/work04/';
 
 // fetchを利用してURLにアクセスしてデータ取得
 fetch(url)
@@ -12,7 +12,5 @@ fetch(url)
 })
 .then(json => {
     // JSONデータを取得したら
-    json.map(value => {
-        console.log(value);
-    });
+    console.log( json );
 });
