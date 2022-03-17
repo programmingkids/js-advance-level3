@@ -22,11 +22,5 @@ async function getValue(seconds, url) {
     return title;
 }
 
-(async () => {
-    for(const url of sites) {
-        const title = await getValue(1000, url);
-        console.log( url );
-        console.log( title );
-        console.log('-----');
-    }
-})();
+
+

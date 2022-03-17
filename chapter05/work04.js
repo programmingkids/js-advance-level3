@@ -2,14 +2,9 @@
 console.log( '1:処理の開始' );
 
 // Promiseオブジェクトを返すAsync関数
-async function getValue(seconds, message) {
-    const result = await new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(message);
-        }, seconds);
-    });
-    return result;
-}
+
+
+
 
 // 関数を呼び出すが、戻り値はPromiseオブジェクト
 getValue(1000, '3:こんにちは')
