@@ -5,7 +5,7 @@ console.log( '1:処理の開始' );
 const promise = new Promise((resolve, reject) => {
     // 1秒後に失敗
     setTimeout(() => {
-        reject( '5:さようなら' );
+        
     }, 1000);
 });
 
@@ -16,12 +16,11 @@ const onResolve = (data) => {
 };
 
 // 失敗したときに動作する関数
-const onReject = (data) => {
-    console.log( '4:失敗した' );
-    console.log( data );
-};
+
+
+
 
 // thenメソッドで成功時と失敗時に実行するコールバック関数を設定
-promise.then(onResolve, onReject);
+
 
 console.log( '2:プログラムの最後' );
