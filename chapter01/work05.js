@@ -19,5 +19,4 @@ function getFile( filename ) {
 }
 
 // ファイル読み込み関数の呼び出し
-getFile( 'data5-1.txt' );
-getFile( 'data5-2.txt' );
+
