@@ -4,21 +4,9 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 // アクセスするURL
 const url = 'https://www.yahoo.co.jp/';
 
-const myFetchAndSleep = ( url, seconds ) => {
-    return new Promise((resolve, reject) => {
-        fetch(url)
-        .then(response => {
-            return response.text();
-        })
-        .then(data => {
-            const title = data.match('<title[^>]*>([^<]+)</title>')[1];
-            console.log(title);
-            setTimeout(() => {
-                resolve();
-            }, seconds);
-        });
-    });
-};
+
+
+
 
 myFetchAndSleep(url, 1000)
 .then(() => {
